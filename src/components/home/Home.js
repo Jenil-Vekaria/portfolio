@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { BiMoon, BiMouse } from 'react-icons/bi';
+import { BiMoon } from 'react-icons/bi';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import profile from '../../assests/profile_transparent.png';
 
