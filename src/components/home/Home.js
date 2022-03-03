@@ -7,34 +7,41 @@ import profile from '../../assests/profile_transparent.png';
 const Home = () => {
     return (
         <section className='container'>
-            <header>
-                <h4 className='text-color-primary'>Jenil</h4>
-                <BiMoon size={20} />
+            <header className='header-container'>
+
+                <div className='header-topbar'>
+                    <h4 className='text-color-primary'>Jenil</h4>
+                    <BiMoon size={20} />
+                </div>
+
+
+
+                <div className='header-intro'>
+                    <h5>Hello, I'm</h5>
+                    <h1>Jenil Vekaria</h1>
+                    <h5 className='text-color-secondary'>Gradute Software Developer</h5>
+                </div>
+
+                <div className='header-cta'>
+                    <button className='btn btn-outline'>Download Resume</button>
+                    <button className='btn btn-filled'>About me</button>
+                </div>
+
+
+                <div className='header-profile'>
+                    <img src={profile} alt='Profile' />
+                </div>
+
+                <div className='header-sidebar-info'>
+                    <div className='header-social'>
+                        <a href='https://linkedin.com/in/jenilvekaria' alt="Linkedin" className='header-social-link'><AiFillLinkedin /></a>
+                        <a href='https://github.com/Jenil-Vekaria' alt="Github" className='header-social-link'><AiFillGithub /></a>
+                    </div>
+
+                    <a href='' className='header-scroll-down'>Scroll Down</a>
+                </div>
+
             </header>
-            <div className='home-intro'>
-                <h5>Hello, I'm</h5>
-                <h1>Jenil Vekaria</h1>
-                <h5 className='text-color-secondary'>Computer Science Student</h5>
-            </div>
-
-            <div className='cta'>
-                <button className='btn btn-outline'>Download Resume</button>
-                <button className='btn btn-filled'>About me</button>
-            </div>
-
-            <div className='profile'>
-                <img src={profile} alt='Profile' />
-            </div>
-
-            <div className='social-header'>
-                <a href='' target="_blank"><AiFillLinkedin /></a>
-                <a href='' target="_blank"><AiFillGithub /></a>
-            </div>
-
-            <div className='scroll-down'>
-                <a href='' target="_blank"><BiMouse /> <h6>Scroll Down</h6></a>
-            </div>
-
         </section>
     );
 };

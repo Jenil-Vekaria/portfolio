@@ -1,30 +1,107 @@
-.cta {
-	display: flex;
-	justify-content: center;
-	gap: 20px;
+.header-container {
+	text-align: center;
+	overflow: hidden;
 }
 
-.home-intro {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
-	margin-top: 80px;
-}
-
-header {
+/* ========= TOP BAR ========= */
+.header-topbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
 }
 
-.profile {
+/* ========= HEADER INTRO  ========= */
+.header-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+/* ========= DONWLOAD RESUME AND ABOUT ME BUTTONS  ========= */
+.header-cta {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+/* ========= PROFILE PICTURE  ========= */
+.header-profile {
 	border-radius: 192px 192px 0 0;
 	width: 300px;
 	margin: 0 auto;
 	display: flex;
-	justify-content: center;
 	margin-top: 30px;
+	justify-content: center;
 	background: linear-gradient(var(--color-primary), transparent);
+}
+
+/* ========= SIDEBAR: SOCIAL AND SCROLL DOWN BUTTON  ========= */
+.header-social {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.header-social::after {
+	content: "";
+	width: 1px;
+	height: 2rem;
+	background-color: var(--color-primary);
+}
+
+.header-social-link {
+	width: max-content;
+	background-color: var(--color-bg-light);
+	color: var(--color-primary);
+	padding: 5px;
+	border-radius: 5px;
+	display: flex;
+	font-size: 20px;
+	transition: var(--transition);
+}
+
+.header-social-link:hover {
+	background-color: var(--color-primary);
+	color: #fff;
+}
+
+.header-scroll-down {
+	transform: rotate(90deg);
+}
+
+.header-sidebar-info {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	width: var(--container-width-lg);
+	bottom: 20px;
+}
+
+/* ========= MEDIA QUERIES  ========= */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.header-sidebar-info {
+		width: var(--container-width-md);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-sidebar-info {
+		width: var(--container-width-sm);
+	}
+
+	.header-social-link {
+		font-size: 15px;
+	}
+
+	.header-scroll-down {
+		font-size: 15px;
+	}
+
+	.header-profile {
+		width: 250px;
+	}
 }

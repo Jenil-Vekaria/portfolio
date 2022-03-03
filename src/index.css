@@ -16,17 +16,18 @@ body {
 
 :root {
 	--color-bg: #0a0f1e;
-	--color-primary: #9990ef;
+	--color-bg-light: #171d30;
+	--color-primary: #34ace0;
 	--color-secondary: #b2bec3;
 	--color-white: white;
 
 	/* HOVER COLOUR */
-	--color-primary-hover: #8d84df;
+	--color-primary-hover: #227093;
 
 	/* FOR SCREEN SIZE */
 	--container-width-lg: 75%;
 	--container-width-md: 86%;
-	--container-width-ms: 90%;
+	--container-width-sm: 90%;
 
 	--transition: all 500ms ease;
 }
@@ -39,10 +40,7 @@ html {
 .container {
 	width: var(--container-width-lg);
 	margin: 20px auto;
-}
-
-section {
-	margin-top: 20px;
+	overflow: hidden;
 	height: 100vh;
 }
 
@@ -72,6 +70,16 @@ section > h2 {
 	margin-bottom: 10px;
 }
 
+a {
+	color: var(--color-primary);
+	transition: var(--transition);
+}
+
+img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
 .text-color-secondary {
 	color: var(--color-secondary);
 }
@@ -90,11 +98,6 @@ section > h2 {
 
 .text-weight-regular {
 	font-weight: 400;
-}
-
-a {
-	color: var(--color-primary);
-	transition: var(--transition);
 }
 
 .btn-outline {
@@ -126,4 +129,23 @@ a {
 .btn:hover {
 	background-color: var(--color-primary-hover);
 	color: var(--color-bg);
+}
+
+/* ================ MEDIA QUERIES ================ */
+@media screen and (min-width: 1024px) {
+	.container {
+		width: var(--container-width-lg);
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.container {
+		width: var(--container-width-md);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: var(--container-width-sm);
+	}
 }
