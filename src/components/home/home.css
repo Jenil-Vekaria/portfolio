@@ -1,0 +1,30 @@
+.cta {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.home-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 80px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.profile {
+	border-radius: 192px 192px 0 0;
+	width: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+	background: linear-gradient(var(--color-primary), transparent);
+}

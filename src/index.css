@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	outline: 0;
+	list-style: none;
+	text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+	font-family: "Poppins", sans-serif;
+	background: var(--color-bg);
+	color: var(--color-white);
+	line-height: 1.7;
+}
+
+:root {
+	--color-bg: #0a0f1e;
+	--color-primary: #9990ef;
+	--color-secondary: #b2bec3;
+	--color-white: white;
+
+	/* HOVER COLOUR */
+	--color-primary-hover: #8d84df;
+
+	/* FOR SCREEN SIZE */
+	--container-width-lg: 75%;
+	--container-width-md: 86%;
+	--container-width-ms: 90%;
+
+	--transition: all 500ms ease;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* ==================== GENERAL STYLES ==================== */
+.container {
+	width: var(--container-width-lg);
+	margin: 20px auto;
+}
+
+section {
+	margin-top: 20px;
+	height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 35px;
+}
+h5 {
+	font-weight: 500;
+}
+
+section > h2,
+section > h5 {
+	text-align: center;
+	color: var(--color-primary);
+}
+
+section > h2 {
+	color: var(--color-secondary);
+	margin-bottom: 10px;
+}
+
+.text-color-secondary {
+	color: var(--color-secondary);
+}
+
+.text-color-primary {
+	color: var(--color-primary);
+}
+
+.text-color-white {
+	color: var(--color-white);
+}
+
+.text-weight-light {
+	font-weight: 300;
+}
+
+.text-weight-regular {
+	font-weight: 400;
+}
+
+a {
+	color: var(--color-primary);
+	transition: var(--transition);
+}
+
+.btn-outline {
+	width: max-content;
+	background: transparent;
+	border: 1px solid var(--color-primary);
+	border-radius: 10px;
+	padding: 15px;
+	color: var(--color-primary);
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--transition);
+	font-family: "Poppins", sans-serif;
+}
+
+.btn-filled {
+	width: max-content;
+	background: var(--color-primary);
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	color: var(--color-bg);
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 400ms ease;
+	font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+	background-color: var(--color-primary-hover);
+	color: var(--color-bg);
 }
