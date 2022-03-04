@@ -10,16 +10,16 @@
 body {
 	font-family: "Poppins", sans-serif;
 	background: var(--color-bg);
-	color: var(--color-white);
+	color: #fff;
 	line-height: 1.7;
 }
 
 :root {
 	--color-bg: #0a0f1e;
-	--color-bg-light: #171d30;
+	--color-bg-light: #141c25;
 	--color-primary: #34ace0;
-	--color-secondary: #b2bec3;
-	--color-white: white;
+	--color-secondary: rgba(255, 255, 255, 0.6);
+	--color-text-color: rgba(255, 255, 255, 0.8);
 
 	/* HOVER COLOUR */
 	--color-primary-hover: #227093;
@@ -40,8 +40,8 @@ html {
 .container {
 	width: var(--container-width-lg);
 	margin: 20px auto;
-	overflow: hidden;
 	height: 100vh;
+	/* border: 1px solid greenyellow; */
 }
 
 h1,
@@ -59,15 +59,19 @@ h5 {
 	font-weight: 500;
 }
 
-section > h2,
-section > h5 {
+.section-header {
+	margin-top: 80px;
+}
+.section-header > h2,
+.section-header > h5 {
 	text-align: center;
-	color: var(--color-primary);
+	color: var(--color-secondary);
+	font-weight: 400;
 }
 
-section > h2 {
-	color: var(--color-secondary);
-	margin-bottom: 10px;
+.section-header > h2 {
+	color: var(--color-primary);
+	font-weight: 600;
 }
 
 a {

@@ -6,7 +6,7 @@ import profile from '../../assests/profile_transparent.png';
 
 const Home = () => {
     return (
-        <section className='container'>
+        <section className='container' id="home">
             <header className='header-container'>
 
                 <div className='header-topbar'>
@@ -24,7 +24,7 @@ const Home = () => {
 
                 <div className='header-cta'>
                     <button className='btn btn-outline'>Download Resume</button>
-                    <button className='btn btn-filled'>About me</button>
+                    <a href="#about"><button className='btn btn-filled'>About me</button></a>
                 </div>
 
 
@@ -38,7 +38,7 @@ const Home = () => {
                         <a href='https://github.com/Jenil-Vekaria' alt="Github" className='header-social-link'><AiFillGithub /></a>
                     </div>
 
-                    <a href='' className='header-scroll-down'>Scroll Down</a>
+                    <a href='#about' className='header-scroll-down'>Scroll Down</a>
                 </div>
 
             </header>
