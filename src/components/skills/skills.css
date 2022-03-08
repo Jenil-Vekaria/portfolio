@@ -1,0 +1,36 @@
+.skills-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 25px;
+	margin-top: 40px;
+	/* border: 1px solid red; */
+}
+
+.skills-card {
+	background: var(--color-bg-light);
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.skills-title {
+	text-align: center;
+}
+
+.skills-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+	margin-top: 25px;
+}
+
+.skills-item {
+	display: flex;
+	align-items: center;
+}
+.skills-item > h5 {
+	padding-left: 10px;
+	font-weight: 600;
+}
+.skills-item-icon {
+	color: var(--color-primary);
+}

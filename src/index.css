@@ -41,7 +41,9 @@ html {
 	width: var(--container-width-lg);
 	margin: 20px auto;
 	height: 100vh;
-	/* border: 1px solid greenyellow; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 h1,
@@ -59,9 +61,6 @@ h5 {
 	font-weight: 500;
 }
 
-.section-header {
-	margin-top: 80px;
-}
 .section-header > h2,
 .section-header > h5 {
 	text-align: center;

@@ -7,15 +7,11 @@ import profile from '../../assests/profile_transparent.png';
 const Home = () => {
     return (
         <section className='container' id="home">
+            <div className='header-topbar'>
+                <h4 className='text-color-primary'>Jenil</h4>
+                <BiMoon size={20} />
+            </div>
             <header className='header-container'>
-
-                <div className='header-topbar'>
-                    <h4 className='text-color-primary'>Jenil</h4>
-                    <BiMoon size={20} />
-                </div>
-
-
-
                 <div className='header-intro'>
                     <h5>Hello, I'm</h5>
                     <h1>Jenil Vekaria</h1>
