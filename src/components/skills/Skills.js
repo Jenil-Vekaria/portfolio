@@ -3,7 +3,7 @@ import './skills.css';
 import { BsPatchCheckFill } from 'react-icons/bs';
 const Skills = () => {
     return (
-        <section className='container'>
+        <section className='container' id="skills">
             <div className='section-header'>
                 <h5>What Skills I Have</h5>
                 <h2>My Experience</h2>

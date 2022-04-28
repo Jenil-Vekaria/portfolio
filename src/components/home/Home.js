@@ -20,7 +20,7 @@ const Home = () => {
 
                 <div className='header-cta'>
                     <button className='btn btn-outline'>Download Resume</button>
-                    <a href="#about"><button className='btn btn-filled'>About me</button></a>
+                    <a href="#skills"><button className='btn btn-filled'>About me</button></a>
                 </div>
 
 

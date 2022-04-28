@@ -1,6 +1,5 @@
 .header-container {
 	text-align: center;
-	overflow: hidden;
 }
 
 /* ========= TOP BAR ========= */
@@ -8,12 +7,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	width: var(--container-width-lg);
 	background: var(--color-bg);
 	z-index: 2;
-	padding-top: 25px;
 }
 
 /* ========= HEADER INTRO  ========= */
@@ -93,10 +91,6 @@
 	.header-sidebar-info {
 		width: var(--container-width-md);
 	}
-
-	.header-topbar {
-		width: var(--container-width-md);
-	}
 }
 
 @media screen and (max-width: 767px) {
@@ -110,10 +104,6 @@
 
 	.header-scroll-down {
 		font-size: 15px;
-	}
-
-	.header-profile {
-		width: 250px;
 	}
 
 	.header-topbar {
