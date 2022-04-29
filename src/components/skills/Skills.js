@@ -14,65 +14,65 @@ const Skills = () => {
                     <div className='skills-list'>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Ullamco</h5>
+                            <h5>Java</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Lorem</h5>
+                            <h5>Python</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Cupidatat</h5>
+                            <h5>Kotlin</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Minim</h5>
+                            <h5>JavaScript</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Dolore</h5>
+                            <h5>Bash</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Quis</h5>
+                            <h5>Apex</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Tempor</h5>
+                            <h5>SQL</h5>
+                        </article>
+                        <article className='skills-item'>
+                            <BsPatchCheckFill className="skills-item-icon" />
+                            <h5>XML</h5>
                         </article>
                     </div>
                 </div>
 
                 <div className='skills-card'>
-                    <h3 className='skills-title text-color-primary'>Frameworks</h3>
+                    <h3 className='skills-title text-color-primary'>Frontend/Backend</h3>
                     <div className='skills-list'>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Ullamco</h5>
+                            <h5>React</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Lorem</h5>
+                            <h5>Angular</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Cupidatat</h5>
+                            <h5>Express.js</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Minim</h5>
+                            <h5>Node.js</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Dolore</h5>
+                            <h5>Bootstrap CSS</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Quis</h5>
-                        </article>
-                        <article className='skills-item'>
-                            <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Tempor</h5>
+                            <h5>Materialize CSS</h5>
                         </article>
                     </div>
                 </div>
@@ -82,15 +82,15 @@ const Skills = () => {
                     <div className='skills-list'>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Ullamco</h5>
+                            <h5>Oracle DB</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Lorem</h5>
+                            <h5>MongoDB</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Cupidatat</h5>
+                            <h5>Firebase DB</h5>
                         </article>
                     </div>
                 </div>
@@ -100,35 +100,40 @@ const Skills = () => {
                     <div className='skills-list'>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Ullamco</h5>
+                            <h5>TravisCI</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Lorem</h5>
+                            <h5>Git</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Cupidatat</h5>
+                            <h5>Postman</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Minim</h5>
+                            <h5>Android Studio</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Dolore</h5>
+                            <h5>JIRA</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Quis</h5>
+                            <h5>Bitbucket</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Tempor</h5>
+                            <h5>Confluence</h5>
+                        </article>
+
+                        <article className='skills-item'>
+                            <BsPatchCheckFill className="skills-item-icon" />
+                            <h5>Google Cloud</h5>
                         </article>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />
-                            <h5>Tempor</h5>
+                            <h5>Adobe XD</h5>
                         </article>
                     </div>
                 </div>
