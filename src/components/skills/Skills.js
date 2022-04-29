@@ -10,7 +10,7 @@ const Skills = () => {
             </div>
             <div className='skills-container'>
                 <div className='skills-card'>
-                    <h3 className='skills-title text-color-primary'>Languages</h3>
+                    <h3 className='text-color-primary'>Languages</h3>
                     <div className='skills-list'>
                         <article className='skills-item'>
                             <BsPatchCheckFill className="skills-item-icon" />

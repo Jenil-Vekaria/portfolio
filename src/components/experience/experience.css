@@ -1,0 +1,44 @@
+.work-experience-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 25px;
+}
+
+.work-experience-card {
+	background: var(--color-bg-light);
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.work-experience-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.work-experience-description {
+	margin-top: 25px;
+}
+
+.work-experience-description > li {
+	font-weight: 200;
+	font-size: 14px;
+	margin-left: 30px;
+}
+
+.work-experience-description > li::before {
+	content: "•";
+	color: var(--color-primary);
+	font-size: 25px;
+	display: inline-block;
+	margin-left: -1em;
+	width: 1em;
+}
+
+/* ================ MEDIA QUERIES ================ */
+@media screen and (max-width: 900px) {
+	.work-experience-container {
+		grid-template-columns: 1fr;
+	}
+}
