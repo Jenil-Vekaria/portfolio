@@ -1,0 +1,145 @@
+.filter-sort-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.filters {
+	padding-right: 70px;
+}
+
+.filter-button {
+	border: none;
+	background: var(--color-bg-light);
+	color: var(--color-white);
+	font-weight: 400;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border-radius: 30px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all 200ms ease;
+}
+
+.filter-button:hover {
+	color: var(--color-primary);
+}
+
+.view-by {
+	display: flex;
+}
+
+.view-button {
+	width: 40px;
+	height: 40px;
+	background: var(--color-bg-light);
+	border: none;
+	border-radius: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.view-icon {
+	font-size: 25px;
+	color: white;
+	transition: all 200ms ease;
+}
+
+.view-icon:hover {
+	color: var(--color-primary);
+}
+
+.project-filter-dropdown {
+	background: var(--color-bg);
+	border: 1px solid rgb(69, 69, 69);
+	padding: 10px 5px;
+	border-radius: 8px;
+	color: white;
+	font-family: "Poppins", sans-serif;
+	width: 200px;
+	height: 40px;
+	cursor: pointer;
+	transition: all 200ms ease;
+}
+
+.project-filter-dropdown:hover {
+	border: 1px solid rgb(130, 130, 130);
+}
+
+.project-card-container {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 25px;
+	margin-top: 25px;
+}
+
+.project-card {
+	background: var(--color-bg-light);
+	border-radius: 10px;
+	transition: al 300s ease;
+	animation: fadeIn 2s;
+}
+
+.project-card img {
+	border-radius: 10px 10px 0 0;
+}
+
+.project-card p {
+	font-size: 14px;
+	font-weight: 200;
+	margin-top: 5px;
+}
+
+.project-card-info {
+	padding: 10px;
+}
+
+.project-card-footer {
+	padding: 0 10px 10px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project-languages {
+	display: flex;
+	padding-left: 10px;
+}
+.project-languages p {
+	margin-right: 10px;
+	border-radius: 10px;
+	color: var(--color-secondary);
+}
+
+.project-links {
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.project-links a {
+	margin-right: 10px;
+	color: white;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	.project-card-container {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.project-card-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

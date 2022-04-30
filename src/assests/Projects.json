@@ -1,0 +1,154 @@
+{
+    "Projects": [
+        {
+            
+            "ProjectID": 1,
+            "ProjectImage": "/images/ToDo.png",
+            "ProjectName": "Productivity",
+            "ProjectDate": "April 2020",
+            "ProjectDescription": "Productivity is an Android App that helps you keep track of your daily tasks. You can add task entries or projects and choose badge color. Adding projects allows you to keep track of all tasks for a specific project. *Dark Theme/Light Theme Availability*",
+            "LanguagesUsed": [
+                "Java",
+                "Android Studio"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/Todo-Android-App"
+        },
+        {
+            
+            "ProjectID": 2,
+            "ProjectImage": "/images/CarRental.png",
+            "ProjectName": "Car Rental App",
+            "ProjectDate": "December 2019",
+            "ProjectDescription": "Car Rental Android App which has User and Admin view. Admin can add vehicles and categories. Users can then browse through categories and choose vehicle of their choice by providing their information. Once booking is complete, they view the total cost, rental rate, etc... ",
+            "LanguagesUsed": [
+                "Java",
+                "Android Studio"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/Car-Rental-Mobile-App"
+        },
+        {
+            "ProjectID": 3,
+            "ProjectImage": "/images/SoccerRobot.png",
+            "ProjectName": "Soccer Robot",
+            "ProjectDate": "December 2018",
+            "ProjectDescription": "Competitive Autonomous Soccer Robot which can find the ball and score a goal. It is also capable of doing complex tasks such as navigation, finding opponents and preventing goals.",
+            "LanguagesUsed": [
+                "C Programming",
+                "Arduino"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria"
+        },
+        {
+            "ProjectID": 4,
+            "ProjectImage": "/images/SlimeHunter.png",
+            "ProjectName": "Slime Hunter",
+            "ProjectDate": "July - August 2018",
+            "ProjectDescription": "It's an RPG Dungeon Type game where the main objective is to explore all the regions and capture all the slimes. Along the way, you discover new places and items(keys to unlock chests and doors, coins), and use these to help you find all the slimes.",
+            "LanguagesUsed": [
+                "Java",
+                "Java GUI"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/JavaGame"
+        },
+        {
+            "ProjectID": 5,
+            "ProjectImage": "/images/WorktrackApp.png",
+            "ProjectName": "Work Tracking App",
+            "ProjectDate": "August 2019",
+            "ProjectDescription": "Work Tracking Android App which allows you keep track of all your easily. Some functionalities includes such as, work calculator, a calendar to view all you entries, total monthly earning, all paid shifts and etc..",
+            "LanguagesUsed": [
+                "Java",
+                "Android Studio"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/WorkTrackingApp"
+        },
+        {
+            "ProjectID": 6,
+            "ProjectImage": "/images/VapeSafe.png",
+            "ProjectName": "VafeSafe: EngHack",
+            "ProjectDate": "July 2019",
+            "ProjectDescription": "VapeSafe is an Arduino-Android project that keeps track of daily vape usage and limits the user once they reached their daily limit. The recommended daily limit is calculated using information regarding the user's height, weight, and daily smoking habits. Usage statistics are also available to be viewed in the app to keep track of progress.",
+            "LanguagesUsed": [
+                "C Programming",
+                "Arduino"
+            ],
+            "ProjectLink": "https://github.com/leviaviv28/VapeSafe-EngHack2019"
+        },
+        {
+            "ProjectID": 7,
+            "ProjectImage": "/images/HomeAutomation.png",
+            "ProjectName": "Home Automation: MakeUofT",
+            "ProjectDate": "February 2019",
+            "ProjectDescription": "Home automation that allows you to control over elements such as door, lightings and fan via voice control through your smartphone and Bluetooth. This was build using Arduino, and programmed widi chip(Proton) that would allow us to upload data to the web for analytical purposes.",
+            "LanguagesUsed": [
+                "C Programming",
+                "Arduino",
+                "Proton"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria"
+        },
+        {
+            "ProjectID": 8,
+            "ProjectImage": "/images/FinalWebDev.png",
+            "ProjectName": "Final Website Project",
+            "ProjectDate": "December 2018",
+            "ProjectDescription": "Our final CPS530 group website project. This website consists of six pages like Home-Page(which is a demo page), Installation-Page on how to install the frameworks, Framework-Page containing info about the frameworks, Tutorial-Page of how we built the site, Contact-Page and etc..",
+            "LanguagesUsed": [
+                "HTML/CSS",
+                "JavaScript",
+                "Boostrap"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/Webdev-Project-Website"
+        },
+        {
+            "ProjectID": 9,
+            "ProjectImage": "/images/MusicPlaylist.png",
+            "ProjectName": "Music Playlist System",
+            "ProjectDate": "March 2018",
+            "ProjectDescription": "A Music Playlist System where admin can selects songs which are available for the users to view it. Once the user login, list of songs will be displayed on the dashboard. They can create a playlist and add songs from the list to their playlist.",
+            "LanguagesUsed": [
+                "HTML/CSS",
+                "JavaScript",
+                "PHP",
+                "MySQL"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/MusicPlaylist"
+        },
+        {
+            "ProjectID": 10,
+            "ProjectImage": "/images/Clipboard.png",
+            "ProjectName": "Google Extension: Clipboard",
+            "ProjectDate": "March 2018",
+            "ProjectDescription": "Clipboard History Google Extension which stores your copied text and allows you to rollback any item. Some functionality includes favoriting items, download all the items into a text file, copy an item with one click and clear all items.",
+            "LanguagesUsed": [
+                "HTML/CSS",
+                "JavaScript"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/GoogleExtensions"
+        },
+        {
+            "ProjectID": 11,
+            "ProjectImage": "/images/GrocerySimulator.png",
+            "ProjectName": "Grocery Cart Simulator",
+            "ProjectDate": "April 2018",
+            "ProjectDescription": "A Grocery Cart Simulator which was built around the concept of OOP. This simulator read items from a text file and display them on the GUI. You then can add items to conveyor belt and checkout items, or read nutrition information of each item.",
+            "LanguagesUsed": [
+                "Java",
+                "JavaGUI"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria"
+        },
+        {
+            "ProjectID": 12,
+            "ProjectImage": "/images/SlimeHunterMapMaker.png",
+            "ProjectName": "Slime Hunter Map Maker",
+            "ProjectDate": "March 2018",
+            "ProjectDescription": "Map Maker for the \"Slime Hunter\" game where you can create your own world and play it. This map maker allows to drag and drop varieties of items(doors, keys, tiles, slimes, stairs, etc..) on the map grid. There are over 50 items to choose from the list. ",
+            "LanguagesUsed": [
+                "Java",
+                "JavaGUI"
+            ],
+            "ProjectLink": "https://github.com/Jenil-Vekaria/JavaGame"
+        }
+    ]
+}

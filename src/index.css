@@ -137,7 +137,7 @@ img {
 	color: var(--color-bg);
 }
 
-/* ================ MEDIA QUERIES ================ */
+/* MEIDA QUERIES */
 @media screen and (min-width: 1024px) {
 	.container {
 		width: var(--container-width-lg);
