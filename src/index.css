@@ -137,6 +137,10 @@ img {
 	color: var(--color-bg);
 }
 
+.active {
+	color: var(--color-primary);
+}
+
 /* MEIDA QUERIES */
 @media screen and (min-width: 1024px) {
 	.container {

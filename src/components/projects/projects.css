@@ -78,7 +78,7 @@
 	background: var(--color-bg-light);
 	border-radius: 10px;
 	transition: al 300s ease;
-	animation: fadeIn 2s;
+	animation: fadeIn 1s;
 }
 
 .project-card img {
@@ -119,6 +119,57 @@
 .project-links a {
 	margin-right: 10px;
 	color: white;
+}
+
+/* PROJECT LIST VIEW */
+/* .project-list-containere th,
+td {
+	border-style: solid;
+	border-bottom: 1px;
+	border-right: 1px;
+	border-left: 1px;
+	border-color: red;
+	border-collapse: collapse;
+} */
+
+.project-list-container {
+	margin-top: 25px;
+	animation: fadeIn 1s;
+}
+
+.project-list-container table {
+	border: 0;
+	border-collapse: collapse;
+}
+
+.project-list-container th {
+	text-align: left;
+	font-size: 12px;
+	color: var(--color-primary);
+	text-transform: capitalize;
+}
+
+.project-list-container td {
+	text-align: left;
+	font-size: 14px;
+	padding-right: 20px;
+	color: var(--color-secondary);
+	text-transform: capitalize;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	color: white;
+}
+
+.project-list-container td > a {
+	color: white;
+	margin-right: 10px;
+}
+
+.list-row {
+	border: 0.8px solid rgb(69, 69, 69);
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
 }
 
 /* MEDIA QUERIES */

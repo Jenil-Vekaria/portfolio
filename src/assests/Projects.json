@@ -6,7 +6,7 @@
             "ProjectImage": "/images/ToDo.png",
             "ProjectName": "Productivity",
             "ProjectDate": "April 2020",
-            "ProjectDescription": "Productivity is an Android App that helps you keep track of your daily tasks. You can add task entries or projects and choose badge color. Adding projects allows you to keep track of all tasks for a specific project. *Dark Theme/Light Theme Availability*",
+            "ProjectDescription": "Productivity is an Android App to keep track of your daily tasks. You can create task, and projects to organize subtasks.",
             "LanguagesUsed": [
                 "Java",
                 "Android Studio"
@@ -19,7 +19,7 @@
             "ProjectImage": "/images/CarRental.png",
             "ProjectName": "Car Rental App",
             "ProjectDate": "December 2019",
-            "ProjectDescription": "Car Rental Android App which has User and Admin view. Admin can add vehicles and categories. Users can then browse through categories and choose vehicle of their choice by providing their information. Once booking is complete, they view the total cost, rental rate, etc... ",
+            "ProjectDescription": "Car Rental Simulation Android App for users to browse and book vehicals and the admin can manage booking requests and add new vehicals.",
             "LanguagesUsed": [
                 "Java",
                 "Android Studio"
@@ -31,7 +31,7 @@
             "ProjectImage": "/images/SoccerRobot.png",
             "ProjectName": "Soccer Robot",
             "ProjectDate": "December 2018",
-            "ProjectDescription": "Competitive Autonomous Soccer Robot which can find the ball and score a goal. It is also capable of doing complex tasks such as navigation, finding opponents and preventing goals.",
+            "ProjectDescription": "Autonomous Soccer Robot with the ability to locate ball and score a goal on the opponent. It is also capable of navigating complex routes, and locate and prevent opponents from scoring.",
             "LanguagesUsed": [
                 "C Programming",
                 "Arduino"
@@ -65,7 +65,7 @@
         {
             "ProjectID": 6,
             "ProjectImage": "/images/VapeSafe.png",
-            "ProjectName": "VafeSafe: EngHack",
+            "ProjectName": "VafeSafe: EngHack 2019 (3rd Place)",
             "ProjectDate": "July 2019",
             "ProjectDescription": "VapeSafe is an Arduino-Android project that keeps track of daily vape usage and limits the user once they reached their daily limit. The recommended daily limit is calculated using information regarding the user's height, weight, and daily smoking habits. Usage statistics are also available to be viewed in the app to keep track of progress.",
             "LanguagesUsed": [
@@ -77,13 +77,12 @@
         {
             "ProjectID": 7,
             "ProjectImage": "/images/HomeAutomation.png",
-            "ProjectName": "Home Automation: MakeUofT",
+            "ProjectName": "Home Automation: MakeUofT 2019",
             "ProjectDate": "February 2019",
             "ProjectDescription": "Home automation that allows you to control over elements such as door, lightings and fan via voice control through your smartphone and Bluetooth. This was build using Arduino, and programmed widi chip(Proton) that would allow us to upload data to the web for analytical purposes.",
             "LanguagesUsed": [
                 "C Programming",
-                "Arduino",
-                "Proton"
+                "Arduino"
             ],
             "ProjectLink": "https://github.com/Jenil-Vekaria"
         },
