@@ -22,7 +22,7 @@ body {
 	--color-text-color: rgba(255, 255, 255, 0.8);
 
 	/* HOVER COLOUR */
-	--color-primary-hover: #227093;
+	--color-primary-hover: #57b3da;
 
 	/* FOR SCREEN SIZE */
 	--container-width-lg: 75%;
@@ -34,6 +34,43 @@ body {
 
 html {
 	scroll-behavior: smooth;
+}
+
+/* ============FOOTER STYLES ================ */
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	bottom: 10px;
+	gap: 5px;
+}
+
+.footer > p {
+	font-weight: 200;
+	font-size: 14px;
+}
+
+.scroll-to-top {
+	cursor: pointer;
+	color: white;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.footer-links {
+	margin-top: 10px;
+	display: flex;
+	gap: 15px;
+}
+
+.footer-links > a {
+	color: white;
+	transition: ease 0.2s;
+}
+
+.footer-links a:hover {
+	color: var(--color-primary);
 }
 
 /* ==================== GENERAL STYLES ==================== */
@@ -130,6 +167,7 @@ img {
 	cursor: pointer;
 	transition: all 400ms ease;
 	font-family: "Poppins", sans-serif;
+	display: flex;
 }
 
 .btn:hover {

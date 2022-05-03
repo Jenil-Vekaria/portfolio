@@ -109,7 +109,7 @@ const Projects = () => {
                                             }
 
                                             {
-                                                project.github && (<a href={project.gtihub}><BsGithub size={20} /></a>)
+                                                project.github && (<a href={project.github}><BsGithub size={20} /></a>)
                                             }
 
                                             {
@@ -147,7 +147,7 @@ const Projects = () => {
                                                 }
 
                                                 {
-                                                    project.github && (<a href={project.gtihub}><BsGithub size={20} /></a>)
+                                                    project.github && (<a href={project.github}><BsGithub size={20} /></a>)
                                                 }
 
                                                 {

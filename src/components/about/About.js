@@ -38,7 +38,7 @@ const About = () => {
                         Biking 🚴‍♂️, Swimming 🏊‍♂️(former Lifeguard), listening to music 🎵 or watching TV shows 📺.
                     </p>
                     <br />
-                    <button className='btn-filled'>Contact Me</button>
+                    <a href="#contact"><button className='btn btn-filled' >Contact Me</button></a>
                 </div>
             </div>
         </section>

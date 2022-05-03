@@ -19,7 +19,7 @@ const Home = () => {
                 </div>
 
                 <div className='header-cta'>
-                    <button className='btn btn-outline'>Download Resume</button>
+                    <a href="/resume.pdf" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
                     <a href="#about"><button className='btn btn-filled'>About me</button></a>
                 </div>
 
@@ -30,8 +30,8 @@ const Home = () => {
 
                 <div className='header-sidebar-info'>
                     <div className='header-social'>
-                        <a href='https://linkedin.com/in/jenilvekaria' alt="Linkedin" className='header-social-link'><AiFillLinkedin /></a>
-                        <a href='https://github.com/Jenil-Vekaria' alt="Github" className='header-social-link'><AiFillGithub /></a>
+                        <a href='https://linkedin.com/in/jenilvekaria' alt="LinkedIn" className='header-social-link'><AiFillLinkedin size={20} /></a>
+                        <a href='https://github.com/Jenil-Vekaria' alt="Github" className='header-social-link'><AiFillGithub size={20} /></a>
                     </div>
 
                     <a href='#about' className='header-scroll-down'>Scroll Down</a>
