@@ -6,24 +6,38 @@ import { SiDevpost } from 'react-icons/si';
 import projectsList from '../../assests/Projects.json';
 import './projects.css';
 import { WindowSize } from '../../util/WindowSize';
+import sanityClient from "../../client";
+import { urlFor } from '../../util/SanityImageUrl';
 
 const Projects = () => {
 
-    const projects = projectsList.Projects;
-    const filterOptions = ["All", "Java", "React", "Angular", "HTML/CSS", "Python", "C Programming", "Kotlin", "NodeJs", "ExpressJs", "MongoDB", "SQL", "Arduino", "Data Science", "Machine Learning"];
+    const windowSize = WindowSize();
+    const filterOptions = ["All", "Java", "React", "Angular", "HTML", "CSS", "Python", "C-Programming", "Kotlin", "NodeJs", "ExpressJs", "MongoDB", "SQL", "Arduino", "Data Science", "Machine Learning"];
 
     const [selectedFilter, setSelectedFilter] = useState("All");
     const [showGridView, setShowGridView] = useState(true);
-    const [filteredProjects, setFilteredProjects] = useState(projects);
-    const windowSize = WindowSize();
-
-    // const filteredProjects = projects.filter(project => selectedFilter === "" ? project : project.LanguagesUsed.includes(selectedFilter));
-
-    console.log(windowSize);
+    const [projects, setProjects] = useState(null);
+    const [filteredProjects, setFilteredProjects] = useState(null);
 
     useEffect(() => {
-        setFilteredProjects(projects.filter(project => selectedFilter === "All" ? projects : project.LanguagesUsed.includes(selectedFilter)));
-    }, [selectedFilter, projects]);
+        if (selectedFilter === "All") {
+            setFilteredProjects(projects);
+        }
+        else {
+            setFilteredProjects(projects.filter(project => project.technologies.includes(selectedFilter)));
+        }
+    }, [selectedFilter]);
+
+    useEffect(() => {
+        sanityClient.fetch(`*[_type == "project"] | order(created desc)`)
+            .then((data) => {
+                setProjects(data);
+                setFilteredProjects(data);
+
+                console.log(data);
+            })
+            .catch(console.error);
+    }, []);
 
 
     const onFilterOptionSelect = (e) => {
@@ -71,34 +85,36 @@ const Projects = () => {
                 </div>
 
                 {
-                    showGridView && (
+                    showGridView && filteredProjects && (
                         <div className='project-card-container'>
 
                             {
-                                filteredProjects.map((project, index) => (
-                                    <div className='project-card' key={project.ProjectID}>
-                                        <img src={project.ProjectImage} alt='Soccer Robot' />
+                                filteredProjects.map((project) => (
+                                    <div className='project-card' key={project._id}>
+                                        <img src={urlFor(project.image.asset._ref)} alt='Soccer Robot' />
                                         <div className='project-card-info'>
-                                            <h4 className='text-color-primary'>{project.ProjectName}</h4>
-                                            <p>{project.ProjectDescription}</p>
+                                            <h4 className='text-color-primary'>{project.name}</h4>
+                                            <p>{project.description}</p>
                                         </div>
 
                                         <div className='project-languages'>
                                             {
-                                                project.LanguagesUsed.map(language => (<p>{language}</p>))
+                                                project.technologies.map(tech => (<p>{tech}</p>))
                                             }
                                         </div>
 
                                         <div className='project-links'>
-                                            <a href="#">
-                                                <BiLink size={20} />
-                                            </a>
-                                            <a href="#">
-                                                <BsGithub size={20} />
-                                            </a>
-                                            <a href="#">
-                                                <SiDevpost size={20} />
-                                            </a>
+                                            {
+                                                project.demo && (<a href={project.demo}><BiLink size={20} /></a>)
+                                            }
+
+                                            {
+                                                project.github && (<a href={project.gtihub}><BsGithub size={20} /></a>)
+                                            }
+
+                                            {
+                                                project.devpost && (<a href={project.devpost}><SiDevpost size={20} /></a>)
+                                            }
                                         </div>
                                     </div>
                                 ))
@@ -110,7 +126,7 @@ const Projects = () => {
 
 
                 {
-                    !showGridView && (
+                    !showGridView && filteredProjects && (
                         <div className='project-list-container'>
                             <table>
                                 <tr className='list-row'>
@@ -121,20 +137,23 @@ const Projects = () => {
                                 </tr>
                                 {
                                     filteredProjects.map(project => (
-                                        <tr className='list-row'>
-                                            <td width="15%">{project.ProjectName}</td>
-                                            <td width="55%">{project.ProjectDescription}</td>
-                                            <td width="15%">{project.LanguagesUsed.join(", ")}</td>
+                                        <tr className='list-row' key={project._id}>
+                                            <td width="15%">{project.name}</td>
+                                            <td width="55%">{project.description}</td>
+                                            <td width="15%">{project.technologies.join(", ")}</td>
                                             <td>
-                                                <a href="#">
-                                                    <BiLink size={20} />
-                                                </a>
-                                                <a href="#">
-                                                    <BsGithub size={20} />
-                                                </a>
-                                                <a href="#">
-                                                    <SiDevpost size={20} />
-                                                </a></td>
+                                                {
+                                                    project.demo && (<a href={project.demo}><BiLink size={20} /></a>)
+                                                }
+
+                                                {
+                                                    project.github && (<a href={project.gtihub}><BsGithub size={20} /></a>)
+                                                }
+
+                                                {
+                                                    project.devpost && (<a href={project.devpost}><SiDevpost size={20} /></a>)
+                                                }
+                                            </td>
                                         </tr>
                                     ))
                                 }
