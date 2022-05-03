@@ -141,6 +141,11 @@ img {
 	color: var(--color-primary);
 }
 
+.highlight {
+	color: var(--color-primary);
+	font-weight: bold;
+}
+
 /* MEIDA QUERIES */
 @media screen and (min-width: 1024px) {
 	.container {

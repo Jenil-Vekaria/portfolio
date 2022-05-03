@@ -7,11 +7,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
-	/* position: fixed; */
-	top: 0;
-	width: var(--container-width-lg);
+	width: 100%;
 	background: var(--color-bg);
-	z-index: 2;
 }
 
 /* ========= HEADER INTRO  ========= */
@@ -104,9 +101,5 @@
 
 	.header-scroll-down {
 		font-size: 15px;
-	}
-
-	.header-topbar {
-		width: var(--container-width-sm);
 	}
 }

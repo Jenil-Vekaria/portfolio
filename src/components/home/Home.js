@@ -15,12 +15,12 @@ const Home = () => {
                 <div className='header-intro'>
                     <h5>Hello, I'm</h5>
                     <h1>Jenil Vekaria</h1>
-                    <h5 className='text-color-secondary'>Gradute Software Developer</h5>
+                    <h5 className='text-color-secondary'>Seeking fulltime Software Developer position</h5>
                 </div>
 
                 <div className='header-cta'>
                     <button className='btn btn-outline'>Download Resume</button>
-                    <a href="#skills"><button className='btn btn-filled'>About me</button></a>
+                    <a href="#about"><button className='btn btn-filled'>About me</button></a>
                 </div>
 
 

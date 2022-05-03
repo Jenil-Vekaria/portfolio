@@ -17,19 +17,25 @@ const About = () => {
 
                 <div className='about-me-description'>
                     <p>
-                        Minim est ex irure velit ea eiusmod eu esse mollit cillum enim do
-                        Lorem sunt. Consectetur aliqua adipisicing deserunt minim ut magna
-                        consectetur velit ea ipsum consequat. Cillum sint incididunt mollit
-                        proident officia officia est eu. Deserunt consectetur et et anim
-                        excepteur.
+                        Hi 👋, I'm Jenil! I graduated from <span className='highlight'>Ryerson University</span> in 2022 with a Bachelors
+                        degree in <span className='highlight'>Computer Science</span>. I'm a software engineer specialized in
+                        developing and designing exceptional high quality web/mobile applications that run
+                        seamlessly across all platforms & devices.
                     </p>
                     <br />
                     <p>
-                        Minim est ex irure velit ea eiusmod eu esse mollit cillum enim do
-                        Lorem sunt. Consectetur aliqua adipisicing deserunt minim ut magna
-                        consectetur velit ea ipsum consequat. Cillum sint incididunt mollit
-                        proident officia officia est eu. Deserunt consectetur et et anim
-                        excepteur.
+                        Computer Science has vast subdisciplines and as technologies advance quickly, I always
+                        enjoy trying out new technologies to keep things interesting and challenging. My passion
+                        for programming started back in grade 8 creating my first mobile game and ever since
+                        then I began to appreciate the smart and efficient methologies  that goes behind all the technologies
+                        I've ever used. I'm always learning new technologies through school, hackathons and personal
+                        projects.
+
+                    </p>
+                    <br />
+                    <p>
+                        Aside from being in front of my computer, I am probably playing Basketball 🏀,
+                        Biking 🚴‍♂️, Swimming 🏊‍♂️(former Lifeguard), listening to music 🎵 or watching TV shows 📺.
                     </p>
                     <br />
                     <button className='btn-filled'>Contact Me</button>
