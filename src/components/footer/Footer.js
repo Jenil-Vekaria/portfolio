@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiFillLinkedin, AiFillGithub, AiFillFile } from 'react-icons/ai';
 import { SiDevpost } from 'react-icons/si';
 import { MdEmail } from "react-icons/md";
+import countapi from 'countapi-js';
 
 const Footer = () => {
+    const [websiteHit, setwebsiteHit] = useState(0);
+
+    useEffect(() => {
+        countapi.hit('jenil-vekaria.netlify.app').then((result) => { setwebsiteHit(result.value); });
+    }, []);
+
+
     return (
         <footer className='footer'>
             <p>Made with React by Jenil Vekaria</p>
             <a href="#home"><p className='scroll-to-top'>🚀Scroll to the top!🚀</p></a>
+            <p className='active'>Website View Count: {websiteHit}</p>
             <div className='footer-links'>
                 <a href='https://linkedin.com/in/jenilvekaria' alt="Linkedin"><AiFillLinkedin size={25} /></a>
                 <a href='https://github.com/Jenil-Vekaria' alt="Github" ><AiFillGithub size={25} /></a>
