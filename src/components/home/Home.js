@@ -6,7 +6,7 @@ import profile from '../../assests/profile_transparent.png';
 
 const Home = () => {
 
-    const [theme, settheme] = useState("light-theme");
+    const [theme, settheme] = useState("dark-theme");
 
     useEffect(() => {
         document.documentElement.className = theme;
