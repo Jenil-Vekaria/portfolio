@@ -33,8 +33,6 @@ const Projects = () => {
             .then((data) => {
                 setProjects(data);
                 setFilteredProjects(data);
-
-                console.log(data);
             })
             .catch(console.error);
     }, []);
@@ -60,8 +58,8 @@ const Projects = () => {
                         windowSize <= 1023 ? (
                             <select className='project-filter-dropdown' onChange={onFilterOptionSelect}>
                                 {
-                                    filterOptions.map(option => (
-                                        <option value={option}>{option}</option>
+                                    filterOptions.map((option, index) => (
+                                        <option value={option} key={index}>{option}</option>
 
                                     ))
                                 }
@@ -99,7 +97,7 @@ const Projects = () => {
 
                                         <div className='project-languages'>
                                             {
-                                                project.technologies.map(tech => (<p>{tech}</p>))
+                                                project.technologies.map((tech, index) => (<p key={index}>{tech}</p>))
                                             }
                                         </div>
 
