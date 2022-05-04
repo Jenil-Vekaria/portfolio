@@ -1,15 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './home.css';
-import { BiMoon } from 'react-icons/bi';
+import { BsMoonFill, BsMoon } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import profile from '../../assests/profile_transparent.png';
 
 const Home = () => {
+
+    const [theme, settheme] = useState("light-theme");
+
+    useEffect(() => {
+        document.documentElement.className = theme;
+    }, [theme]);
+
+
+
     return (
         <section className='container' id="home">
             <div className='header-topbar'>
                 <h4 className='text-color-primary'>Jenil</h4>
-                <BiMoon size={20} />
+                {
+                    theme === "dark-theme" ?
+                        (
+                            <BsMoonFill className="theme-toggle" size={20} onClick={() => settheme("light-theme")} />
+                        ) :
+                        (
+                            <BsMoon className="theme-toggle" size={20} onClick={() => settheme("dark-theme")} />
+                        )
+                }
             </div>
             <header className='header-container'>
                 <div className='header-intro'>

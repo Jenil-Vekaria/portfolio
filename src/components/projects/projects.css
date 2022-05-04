@@ -42,7 +42,7 @@
 
 .view-icon {
 	font-size: 25px;
-	color: white;
+	color: var(--color-text-color);
 	transition: all 200ms ease;
 }
 
@@ -55,7 +55,7 @@
 	border: 1px solid rgb(69, 69, 69);
 	padding: 10px 5px;
 	border-radius: 8px;
-	color: white;
+	color: var(--color-text-color);
 	font-family: "Poppins", sans-serif;
 	width: 200px;
 	height: 40px;
@@ -118,7 +118,7 @@
 }
 .project-links a {
 	margin-right: 10px;
-	color: white;
+	color: var(--color-text-color);
 }
 
 /* PROJECT LIST VIEW */
@@ -147,11 +147,11 @@
 	text-transform: capitalize;
 	padding-bottom: 25px;
 	padding-top: 25px;
-	color: white;
+	color: var(--color-text-color);
 }
 
 .project-list-container td > a {
-	color: white;
+	color: var(--color-text-color);
 	margin-right: 10px;
 }
 
