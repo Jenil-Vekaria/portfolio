@@ -1,7 +1,6 @@
 import React from 'react';
 import './contact.css';
 import { MdEmail } from "react-icons/md";
-import Footer from '../footer/Footer';
 
 const Contact = () => {
     return (
@@ -11,15 +10,14 @@ const Contact = () => {
                 <h2>Contact Me</h2>
             </div>
 
-            <h4>
-                Seeking fulltime software/full-stack developer position. Got a job opportunity,
-                feedback on my portfolio or invitation to coffee☕, my inbox is
-                always open.
-            </h4>
+            <div className='contact-description'>
+                <p>Seeking fulltime software/full-stack developer</p>
+                <p>position. Got a job opportunity, feedback on my</p>
+                <p>portfolio or invitation to coffee☕, my inbox is</p>
+                <p>always open.</p>
+            </div>
 
             <a href="mailto:jenilvekaria@yahoo.ca"><button className='btn btn-filled'> <MdEmail size={20} /> Send Email</button></a>
-
-            <Footer />
 
         </section>
     );

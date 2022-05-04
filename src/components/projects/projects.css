@@ -122,16 +122,6 @@
 }
 
 /* PROJECT LIST VIEW */
-/* .project-list-containere th,
-td {
-	border-style: solid;
-	border-bottom: 1px;
-	border-right: 1px;
-	border-left: 1px;
-	border-color: red;
-	border-collapse: collapse;
-} */
-
 .project-list-container {
 	margin-top: 25px;
 	animation: fadeIn 1s;
