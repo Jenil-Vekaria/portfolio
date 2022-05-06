@@ -162,6 +162,11 @@
 	border-top: 0;
 }
 
+.show-projects {
+	margin: auto;
+	margin-top: 75px;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	.project-card-container {

@@ -18,6 +18,7 @@ const Projects = () => {
     const [showGridView, setShowGridView] = useState(true);
     const [projects, setProjects] = useState(null);
     const [filteredProjects, setFilteredProjects] = useState(null);
+    const [projectLimit, setProjectLimit] = useState(6);
 
     useEffect(() => {
         if (selectedFilter === "All") {
@@ -40,6 +41,20 @@ const Projects = () => {
 
     const onFilterOptionSelect = (e) => {
         setSelectedFilter(e.target.value);
+    };
+
+    const onHandleShowMore = () => {
+        var endIndex = projectLimit + 3;
+
+        if (endIndex > filteredProjects.length) {
+            endIndex = filteredProjects;
+        }
+
+        setProjectLimit(endIndex);
+    };
+
+    const onHandleShowLess = () => {
+        setProjectLimit(6);
     };
 
 
@@ -87,7 +102,7 @@ const Projects = () => {
                         <div className='project-card-container'>
 
                             {
-                                filteredProjects.map((project) => (
+                                filteredProjects.slice(0, projectLimit).map((project) => (
                                     <div className='project-card' key={project._id}>
                                         <img src={urlFor(project.image.asset._ref)} alt='Soccer Robot' />
                                         <div className='project-card-info'>
@@ -124,7 +139,7 @@ const Projects = () => {
 
 
                 {
-                    !showGridView && filteredProjects && (
+                    !showGridView && filteredProjects != null && filteredProjects.length > 0 && (
                         <div className='project-list-container'>
                             <table>
                                 <tr className='list-row'>
@@ -134,7 +149,7 @@ const Projects = () => {
                                     <th>LINKS</th>
                                 </tr>
                                 {
-                                    filteredProjects.map(project => (
+                                    filteredProjects.slice(0, projectLimit).map(project => (
                                         <tr className='list-row' key={project._id}>
                                             <td width="15%">{project.name}</td>
                                             <td width="55%">{project.description}</td>
@@ -159,6 +174,28 @@ const Projects = () => {
                         </div>
                     )
                 }
+
+                {
+                    filteredProjects != null && filteredProjects.length > 0 &&
+                    (
+                        projectLimit < filteredProjects.length ? (
+                            <button className='btn btn-filled show-projects' onClick={onHandleShowMore}>Show More Projects</button>
+                        ) :
+                            (
+                                <a href="#projects"><button className='btn btn-filled show-projects' onClick={onHandleShowLess}>Show Less Projects</button></a>
+                            )
+                    )
+                }
+
+                {
+                    filteredProjects != null && filteredProjects.length === 0 && (
+                        <>
+                            <br />
+                            <h3>No Projects Found :(</h3>
+                        </>
+                    )
+                }
+
             </div>
 
         </section>
