@@ -8,7 +8,7 @@ const Footer = () => {
     const [websiteHit, setwebsiteHit] = useState(0);
 
     useEffect(() => {
-        countapi.hit('jenil-vekaria.netlify.app', "visits").then((result) => { setwebsiteHit(result.value); });
+        countapi.hit('jenil-vekaria.netlify.app', process.env.REACT_APP_COUNT_API_KEY).then((result) => { setwebsiteHit(result.value); });
     }, []);
 
 
