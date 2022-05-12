@@ -3,7 +3,6 @@ import { HiViewGrid } from 'react-icons/hi';
 import { BiListUl, BiLink } from 'react-icons/bi';
 import { BsGithub } from 'react-icons/bs';
 import { SiDevpost } from 'react-icons/si';
-import projectsList from '../../assests/Projects.json';
 import './projects.css';
 import { WindowSize } from '../../util/WindowSize';
 import sanityClient from "../../client";
