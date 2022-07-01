@@ -34,8 +34,8 @@ const About = () => {
                     </p>
                     <br />
                     <p>
-                        Aside from being in front of my computer, I am probably playing Basketball 🏀,
-                        Biking 🚴‍♂️, Swimming 🏊‍♂️(former Lifeguard), listening to music 🎵 or watching TV shows 📺.
+                        Aside from being in front of my computer, I enjoy playing Basketball 🏀,
+                        Biking 🚴‍♂️, Swimming 🏊‍♂️(former Lifeguard), listening to music 🎵 and watching TV shows 📺.
                     </p>
                     <br />
                     <a href="#contact"><button className='btn btn-filled' >Contact Me</button></a>
