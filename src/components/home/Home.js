@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
 
                 <div className='header-cta'>
-                    <a href="https://drive.google.com/file/d/1dNr7TeXspNcukFk8yHNdCh8W9RCqnUP9/view?usp=sharing" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
+                    <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
                     <a href="#about"><button className='btn btn-filled'>About me</button></a>
                 </div>
 

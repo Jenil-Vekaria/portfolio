@@ -22,7 +22,7 @@ const Footer = () => {
                 <a href='https://github.com/Jenil-Vekaria' alt="Github" ><AiFillGithub size={25} /></a>
                 <a href="https://devpost.com/JenilVekaria" alt="Devpost"><SiDevpost size={25} /></a>
                 <a href="mailto:jenilvekaria@yahoo.ca" alt="Email"><MdEmail size={25} /></a>
-                <a href="https://drive.google.com/file/d/1dNr7TeXspNcukFk8yHNdCh8W9RCqnUP9/view?usp=sharing" alt="Resume"><AiFillFile size={25} /></a>
+                <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><AiFillFile size={25} /></a>
             </div>
         </footer>
     );
