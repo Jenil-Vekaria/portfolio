@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './home.css';
 import { BsMoonFill, BsMoon } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import profile from '../../assests/profile_transparent.png';
 
 const Home = () => {
 
@@ -30,20 +29,17 @@ const Home = () => {
             </div>
             <header className='header-container'>
                 <div className='header-intro'>
-                    <h5>Hello, I'm</h5>
+                    <h4>Hello 👋, I'm</h4>
                     <h1>Jenil Vekaria</h1>
-                    <h5 className='text-color-secondary'>Seeking fulltime Software Developer position</h5>
+                    <h5 className='text-color-secondary'>Seeking entry level Software Developer position</h5>
+
+                    <div className='header-cta'>
+                        <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
+                        <a href="#about"><button className='btn btn-filled'>About me</button></a>
+                    </div>
+
                 </div>
 
-                <div className='header-cta'>
-                    <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
-                    <a href="#about"><button className='btn btn-filled'>About me</button></a>
-                </div>
-
-
-                <div className='header-profile'>
-                    <img src={profile} alt='Profile' />
-                </div>
 
                 <div className='header-sidebar-info'>
                     <div className='header-social'>
@@ -55,7 +51,7 @@ const Home = () => {
                 </div>
 
             </header>
-        </section>
+        </section >
     );
 };
 

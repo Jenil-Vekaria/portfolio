@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.css';
-import profile from '../../assests/profile.png';
 
 const About = () => {
     return (
@@ -12,7 +11,7 @@ const About = () => {
 
             <div className='about-container'>
                 <div className='about-profile'>
-                    <img src={profile} alt='Profile' />
+                    <img src="https://avatars.githubusercontent.com/u/38359318?v=4" alt='Profile' />
                 </div>
 
                 <div className='about-me-description'>

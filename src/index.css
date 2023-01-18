@@ -34,7 +34,7 @@ html,
 	--color-bg: #0a0f1e;
 	--color-bg-light: #141c25;
 	--color-secondary: rgba(255, 255, 255, 0.6);
-	--color-text-color: rgba(255, 255, 255, 0.8);
+	--color-text-color: rgba(255, 255, 255, 0.9);
 }
 
 .light-theme {
@@ -86,10 +86,12 @@ html {
 /* ==================== GENERAL STYLES ==================== */
 .container {
 	width: var(--container-width-lg);
-	margin: 10px auto;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	min-height: 100vh;
 	display: flex;
-	flex-direction: column;
+	flex-flow: column;
 	justify-content: center;
 }
 
@@ -102,7 +104,7 @@ h5 {
 }
 
 h1 {
-	font-size: 35px;
+	font-size: 45px;
 }
 h5 {
 	font-weight: 500;
