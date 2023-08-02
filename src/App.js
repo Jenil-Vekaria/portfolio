@@ -5,15 +5,11 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import React, { useEffect } from 'react';
 import Footer from "./components/footer/Footer";
-import ReactGA from "react-ga";
-
-ReactGA.initialize(process.env.REACT_APP_ANALYTICS_ID);
 
 function App() {
 
   useEffect(() => {
     document.documentElement.className = "dark-theme";
-    ReactGA.pageview(window.location.pathname);
   }, []);
 
 
