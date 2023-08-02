@@ -81,7 +81,7 @@
 
 .header-social-link:hover {
 	background-color: var(--color-primary);
-	color: #fff;
+	color: var(--color-bg);
 }
 
 .header-scroll-down {

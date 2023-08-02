@@ -1,11 +1,11 @@
 .work-experience-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 25px;
+	/* gap: px; */
 }
 
 .work-experience-card {
-	background: var(--color-bg-light);
+	/* background: var(--color-bg-light); */
 	border-radius: 20px;
 	padding: 30px;
 }
@@ -13,22 +13,21 @@
 .work-experience-header {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	/* align-items: center; */
+	text-align: start;
 }
 
-.work-experience-description {
-	margin-top: 25px;
-}
 
 .work-experience-description > li {
 	font-weight: 200;
 	font-size: 14px;
 	margin-left: 30px;
+	list-style-type: disc;
+	padding-top: 10px;
 }
 
 .work-experience-description > li::before {
-	content: "•";
+	/* content: "•"; */
 	color: var(--color-primary);
 	font-size: 25px;
 	display: inline-block;

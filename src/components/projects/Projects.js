@@ -11,7 +11,7 @@ import { urlFor } from '../../util/SanityImageUrl';
 const Projects = () => {
 
     const windowSize = WindowSize();
-    const filterOptions = ["All", "Java", "React", "Angular", "HTML", "CSS", "Python", "C-Programming", "Kotlin", "NodeJs", "ExpressJs", "MongoDB", "SQL", "Arduino", "Data Science", "Machine Learning"];
+    const filterOptions = ["All", "Java", "React", "HTML", "CSS", "Python", "C-Programming", "Kotlin", "NodeJs", "ExpressJs", "MongoDB", "SQL", "Arduino", "Data Science", "Machine Learning"];
 
     const [selectedFilter, setSelectedFilter] = useState("All");
     const [showGridView, setShowGridView] = useState(true);
@@ -82,9 +82,8 @@ const Projects = () => {
                             (
                                 <div className='filters'>
                                     {
-                                        filterOptions.map(option => (
-                                            <button className={`filter-button ${option === selectedFilter ? "active" : ""}`} onClick={onFilterOptionSelect} value={option}>{option}</button>
-
+                                        filterOptions.map((option, index) => (
+                                            <button key={index} className={`filter-button ${option === selectedFilter ? "active" : ""}`} onClick={onFilterOptionSelect} value={option}>{option}</button>
                                         ))
                                     }
                                 </div>
@@ -103,31 +102,36 @@ const Projects = () => {
                             {
                                 filteredProjects.slice(0, projectLimit).map((project) => (
                                     <div className='project-card' key={project._id}>
-                                        <img src={urlFor(project.image.asset._ref)} alt='Soccer Robot' />
-                                        <div className='project-card-info'>
-                                            <h4 className='text-color-primary'>{project.name}</h4>
-                                            <p>{project.description}</p>
+                                        <div>
+                                            <img className='project-image' src={urlFor(project.image.asset._ref)} alt='' />
+                                            <div className='project-card-info'>
+                                                <h4 className='text-color-primary'>{project.name}</h4>
+                                                <p>{project.description}</p>
+                                            </div>
                                         </div>
 
-                                        <div className='project-languages'>
-                                            {
-                                                project.technologies.map((tech, index) => (<p key={index}>{tech}</p>))
-                                            }
+                                        <div>
+                                            <div className='project-languages'>
+                                                {
+                                                    project.technologies.map((tech, index) => (<p key={index}>{tech}</p>))
+                                                }
+                                            </div>
+                                            <div className='project-links'>
+                                                {
+                                                    project.demo && (<a href={project.demo}><BiLink size={20} /></a>)
+                                                }
+
+                                                {
+                                                    project.github && (<a href={project.github}><BsGithub size={20} /></a>)
+                                                }
+
+                                                {
+                                                    project.devpost && (<a href={project.devpost}><SiDevpost size={20} /></a>)
+                                                }
+                                            </div>
                                         </div>
 
-                                        <div className='project-links'>
-                                            {
-                                                project.demo && (<a href={project.demo}><BiLink size={20} /></a>)
-                                            }
 
-                                            {
-                                                project.github && (<a href={project.github}><BsGithub size={20} /></a>)
-                                            }
-
-                                            {
-                                                project.devpost && (<a href={project.devpost}><SiDevpost size={20} /></a>)
-                                            }
-                                        </div>
                                     </div>
                                 ))
 

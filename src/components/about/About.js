@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import sanityClient from "../../client";
+
 import './about.css';
 
 const About = () => {
+    const [certifications, setCertifications] = useState([]);
+    const [skills, setSkills] = useState([]);
+    const [aboutMe, setAboutMe] = useState(null);
+
+    useEffect(() => {
+        sanityClient.fetch(`*[_type == "certification"] | order(issued desc)`)
+            .then(data => setCertifications(data))
+            .catch(console.error);
+
+        sanityClient.fetch(`*[_type == "skill"]`)
+            .then(data => setSkills(data))
+            .catch(console.error);
+
+        sanityClient.fetch(`*[_type == "aboutme"]`)
+            .then(data => setAboutMe(data))
+            .catch(console.error);
+    }, []);
+
     return (
         <section className='container' id="about">
             <div className='section-header'>
@@ -9,38 +29,81 @@ const About = () => {
                 <h2>About Me</h2>
             </div>
 
-            <div className='about-container'>
-                <div className='about-profile'>
-                    <img src="https://avatars.githubusercontent.com/u/38359318?v=4" alt='Profile' />
+            <div className='about-me'>
+                <div className='about-container'>
+                    <div className='about-profile'>
+                        <img src={aboutMe ? aboutMe[0].profileURL : ""} alt='Profile' />
+                    </div>
+
+                    <div className='about-me-description'>
+                        {
+                            aboutMe ? (
+                                aboutMe[0].description.map((description, index) => (<React.Fragment key={index}><p >{description}</p><br /></React.Fragment>))
+                            ) : null
+                        }
+                    </div>
                 </div>
 
-                <div className='about-me-description'>
-                    <p>
-                        Hi 👋, I'm Jenil! I graduated from <span className='highlight'>Ryerson University</span> in 2022 with a Bachelors
-                        degree in <span className='highlight'>Computer Science</span>. I'm a software engineer specialized in
-                        developing and designing exceptional high quality web/mobile applications that run
-                        seamlessly across all platforms & devices.
-                    </p>
-                    <br />
-                    <p>
-                        Computer Science has vast subdisciplines and as technologies advance quickly, I always
-                        enjoy trying out new technologies to keep things interesting and challenging. My passion
-                        for programming started back in grade 8 creating my first mobile game and ever since
-                        then I began to appreciate the smart and efficient methologies  that goes behind all the technologies
-                        I've ever used. I'm always learning new technologies through school, hackathons and personal
-                        projects.
+                <div className='about-container'>
+                    <div>
+                        <h3>Education</h3>
+                        <br />
+                        <div>
+                            <h4 className='text-color-primary'>Ryerson University</h4>
+                            <h5 className='text-color-white'>BSc in Computer Science (Co-op)</h5>
+                            <h5 className='text-color-secondary'>September 2017 - May 2022</h5>
+                            <p className='text-regular'>CGPA: 3.85 / 4.33</p>
+                        </div>
+                        <br />
+                        <div>
+                            <h4 className='text-color-primary'>West Humber Collegiate Institute</h4>
+                            <h5 className='text-color-white'>High School Diploma</h5>
+                            <h5 className='text-color-secondary'>September 2013 - June 2017</h5>
+                            <p className='text-regular'>Average: 88 / 100</p>
+                        </div>
+                    </div>
 
-                    </p>
-                    <br />
-                    <p>
-                        Aside from being in front of my computer, I enjoy playing Basketball 🏀,
-                        Biking 🚴‍♂️, Swimming 🏊‍♂️(former Lifeguard), listening to music 🎵 and watching TV shows 📺.
-                    </p>
-                    <br />
-                    <a href="#contact"><button className='btn btn-filled' >Contact Me</button></a>
+                    <div>
+                        <h3>Skills</h3>
+                        <br />
+                        <div className='about-skills'>
+
+                            {
+                                skills.map((skillsGroup, index) => (
+                                    <div key={index}>
+                                        <h5 className='text-color-secondary'>{skillsGroup.group}</h5>
+                                        <div className='flex'>
+                                            {
+                                                skillsGroup.skills.map((url, index) => (
+                                                    <img alt="" key={index} src={url} height="25" />
+
+                                                ))
+                                            }
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h3>Certifications</h3>
+                        {
+                            certifications.map(certification =>
+                                <a href={certification.link} key={certification.name}>
+                                    <img alt={certification.name} src={certification.imageURL} width='150px' />
+                                </a>
+                            )
+                        }
+                    </div>
                 </div>
+
+                {/* <div className="about-container">
+                    <h3>Certifications</h3>
+                </div> */}
             </div>
-        </section>
+        </section >
     );
 };
 

@@ -11,7 +11,7 @@
 .filter-button {
 	border: none;
 	background: var(--color-bg-light);
-	color: var(--color-white);
+	color: var(--color-primary);
 	font-weight: 400;
 	padding: 10px 15px;
 	margin-bottom: 10px;
@@ -23,7 +23,8 @@
 }
 
 .filter-button:hover {
-	color: var(--color-primary);
+	background: var(--color-primary);
+	color: var(--color-bg);
 }
 
 .view-by {
@@ -79,6 +80,11 @@
 	border-radius: 10px;
 	transition: al 300s ease;
 	animation: fadeIn 1s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .project-card img {
@@ -100,6 +106,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.project-image{
+		height: 200px;
+		width: 100%;
+		object-fit: cover;
 }
 
 .project-languages {

@@ -24,17 +24,17 @@ const Experience = () => {
             <div className='work-experience-container'>
 
                 {
-                    workExperience && workExperience.map(work => (
-                        <div className='work-experience-card'>
+                    workExperience && workExperience.map((work, index) => (
+                        <div className='work-experience-card' key={index}>
                             <div className='work-experience-header'>
-                                <h3 className='text-color-primary'>{work.position}</h3>
-                                <h5 className='text-color-white'>{work.company}</h5>
+                                <h4 className='text-color-primary'>{work.company}</h4>
+                                <h5 className='text-color-white'>{work.position}</h5>
                                 <h5 className='text-color-secondary'>{FormatDate(work.startDate)} - {FormatDate(work.endDate)}</h5>
                             </div>
 
                             <ul className='work-experience-description'>
                                 {
-                                    work.description.map(description => (<li>{description}</li>))
+                                    work.description.map((description, index) => (<li key={index}>{description}</li>))
                                 }
                             </ul>
                         </div>
