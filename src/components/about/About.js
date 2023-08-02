@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import sanityClient from "../../client";
+import { urlFor } from '../../util/SanityImageUrl';
 
 import './about.css';
-import { urlFor } from '../../util/SanityImageUrl';
 
 const About = () => {
     const [certifications, setCertifications] = useState([]);

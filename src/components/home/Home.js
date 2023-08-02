@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './home.css';
 import { BsMoonFill, BsMoon } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import ReactGA from "react-ga";
 
 const Home = () => {
 
@@ -11,7 +12,12 @@ const Home = () => {
         document.documentElement.className = theme;
     }, [theme]);
 
-
+    const onResumeClick = () => {
+        ReactGA.event({
+            category: "interaction",
+            action: "view resume"
+        });
+    };
 
     return (
         <section className='container' id="home">
@@ -34,7 +40,7 @@ const Home = () => {
                     <h5 className='text-color-secondary'>Seeking entry level Software Developer position</h5>
 
                     <div className='header-cta'>
-                        <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
+                        <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><button className='btn btn-outline' onClick={onResumeClick}>View Resume</button></a>
                         <a href="#about"><button className='btn btn-filled'>About me</button></a>
                     </div>
 
