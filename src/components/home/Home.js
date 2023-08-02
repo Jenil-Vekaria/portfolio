@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './home.css';
 import { BsMoonFill, BsMoon } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import ReactGA from "react-ga";
 
 const Home = () => {
 
