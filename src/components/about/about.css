@@ -47,7 +47,7 @@
 		gap: 50px;
 	}
 
-	.about-me:nth-child(0){
+	.about-container:nth-of-type(odd){
 		justify-content: center;
 		align-items: center;
 	}

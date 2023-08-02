@@ -1,13 +1,12 @@
 .work-experience-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	/* gap: px; */
 }
 
 .work-experience-card {
 	/* background: var(--color-bg-light); */
 	border-radius: 20px;
-	padding: 30px;
+	padding: 30px 30px 0 0;
 }
 
 .work-experience-header {
@@ -27,7 +26,6 @@
 }
 
 .work-experience-description > li::before {
-	/* content: "•"; */
 	color: var(--color-primary);
 	font-size: 25px;
 	display: inline-block;
@@ -39,5 +37,9 @@
 @media screen and (max-width: 900px) {
 	.work-experience-container {
 		grid-template-columns: 1fr;
+		/* border: 1px solid red; */
+		
 	}
+
+	
 }

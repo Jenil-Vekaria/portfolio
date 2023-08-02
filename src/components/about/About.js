@@ -92,16 +92,12 @@ const About = () => {
                         {
                             certifications.map(certification =>
                                 <a href={certification.link} key={certification.name}>
-                                    <img alt={certification.name} src={certification.imageURL} width='150px' />
+                                    <img alt={certification.name} src={certification.imageURL} width='140px' />
                                 </a>
                             )
                         }
                     </div>
                 </div>
-
-                {/* <div className="about-container">
-                    <h3>Certifications</h3>
-                </div> */}
             </div>
         </section >
     );
