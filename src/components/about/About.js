@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from "../../client";
 
 import './about.css';
+import { urlFor } from '../../util/SanityImageUrl';
 
 const About = () => {
     const [certifications, setCertifications] = useState([]);
@@ -32,7 +33,7 @@ const About = () => {
             <div className='about-me'>
                 <div className='about-container'>
                     <div className='about-profile'>
-                        <img src={aboutMe ? aboutMe[0].profileURL : ""} alt='Profile' />
+                        <img src={aboutMe ? urlFor(aboutMe[0].profile) : ""} alt='Profile' />
                     </div>
 
                     <div className='about-me-description'>
