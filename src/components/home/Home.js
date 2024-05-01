@@ -29,8 +29,9 @@ const Home = () => {
                 <div className='header-intro'>
                     <h4>Hello 👋, I'm</h4>
                     <h1>Jenil Vekaria</h1>
-                    <h5 className='text-color-secondary'>Seeking entry level Software Developer position</h5>
-
+                    <br />
+                    <h4 className='text-color-primary '>Software Developer</h4>
+                    <h4 className='text-color-primary text-weight-light'>Who builds and designs exceptional high-quality applications.</h4>
                     <div className='header-cta'>
                         <a href="https://drive.google.com/file/d/1FurMCQXQO0pMMJ8PsFiuHgIZYFVktoIp/view?usp=sharing" alt="Resume"><button className='btn btn-outline'>View Resume</button></a>
                         <a href="#about"><button className='btn btn-filled'>About me</button></a>

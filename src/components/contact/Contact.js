@@ -11,9 +11,8 @@ const Contact = () => {
             </div>
 
             <div className='contact-description'>
-                <p>Seeking fulltime software/full-stack developer</p>
-                <p>position. Got a job opportunity, feedback on my</p>
-                <p>portfolio or invitation to coffee☕, my inbox is</p>
+                <p>Got feedback on my</p>
+                <p>portfolio or invitation to coffee ☕, my inbox is</p>
                 <p>always open.</p>
             </div>
 
